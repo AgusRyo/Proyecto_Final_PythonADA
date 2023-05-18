@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Proceso Archivos </title>
+    <meta charset= "utf-8">
+    <meta name="viewport" content="width= device-width , initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+ 
+    <style>
+      html, body{
+        background:#F9F8F6;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-sans, Ubuntu, Cantarell, sans-serif;
+      }
+      
+      header{
+        background:#F9F8F6;
+      }
+      
+      nav {
+        display:inline;
+      }
+      
+      ul li{
+        display:inline;
+      }
+      
+      .nav-item{
+        list-style-type:none;
+        padding-left: 30px;
+      }
+      
+      .nav-link{
+        text-decoration:none;
+        color: black;
+      }
+      .cont-movimientos{
+        width: 500px;
+        height: 150px;
+        background:white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px #B0AFAF;
+      
+      }
+      
+     form{
+      display: grid;
+      padding-bottom: 30px;
+
+     }
+     
+   
+      
+    </style>
+ 
+  </head>
+  
+ 
+  
+  <body>
+    <header>
+    <nav>
+      <a href="#"><img src="https://1ra-intro-python.adaitw.org/img/iso_blanco.svg" width="112" height="28"></a>
+      
+      <ul>
+        <li class="nav-item"><a class="nav-link" href="home.html">Movimientos </a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Proceso Archivos </a></li>
+      </ul>
+        </nav>
+        
+     </header>
+    
+    
+    <br>
+    <div> <h3> Bienvenido, {{saludo}} </h3></div>
+    
+    <br>
+    <div class="cont-movimientos">
+    <form action= "/deposito" method="post">
+      <input type="search" name="monto" placeholder="$.....">
+      <button type="submit">Depositar</button>
+    </form>
+    
+    <form action= "/extraccion" method="post">
+      <input type="search" name="monto" placeholder="$.....">
+      <button type="submit">Extraer</button>
+    </form> 
+    
+    <form action= "/transferencia" method="post"> 
+      <input type="search" name="monto" placeholder="$.....">
+      <button type="submit">Transferir</button>
+   
+    </form>
+    </div>
+    
+    
+
+    
+  </body>
+  
+  
+</html>

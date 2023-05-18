@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <title> Proyecto Ada </title>
+     <meta charset= "utf-8" > 
+     <meta name="viewport" content="width=device-width, initial-sacel=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+      
+      <style>
+        html, body{
+          background: #F8F9F9;
+          font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+        
+        .navBar{
+          display: inline;
+        }
+       
+        
+        .nav-item{
+          list-style-type:none;
+        }
+        .nav-link{
+           text-decoration:none;
+           color:black;
+          
+          }
+        
+      </style>
+  </head>
+  
+  
+  
+  <body>
+   
+    <nav class="navBar" >
+      <a class="navbar-brand" href="#"><img  src="https://1ra-intro-python.adaitw.org/img/iso_blanco.svg" width="112" height="28"></a>
+      
+      <ul class="navList">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Movimientos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="proceso_archivo.html">Proceso de Archivos</a>
+        </li>
+        </ul>
+          
+        <form class="d-flex" role="search" action="/procesar" method="post">
+          <input class="form-control me-2" type="search" name="dni" id= "dni" placeholder="N° de DNI" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" onclick="buscarDNI()">Buscar</button>
+        </form>
+        
+      
+    </nav>
+        
+      <div>
+        <h1 > Bienvenida, {{saludo}}</h1>
+      </div>
+      
+      <div>
+         {{movimiento}}
+      <div>        
+      
+      
+    
+  </body>
+  
+  
+  
+  
+  
+</html>
